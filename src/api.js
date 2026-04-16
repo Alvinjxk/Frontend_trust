@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://wed-production-f7410.up.railway.app/api/',
+  baseURL: 'http://web-production-f7410.up.railway.app/api/',
 });
 
 // Add token to every request
