@@ -15,7 +15,7 @@ function Login({ onLogin }) {
     setLoading(true);
     setError('');
     try {
-      const res = await axios.post('http://web-production-f7410.up.railway.app/api/token/', { username, password });
+      const res = await axios.post('https://web-production-f7410.up.railway.app/api/token/', { username, password });
       localStorage.setItem('token', res.data.access);
       localStorage.setItem('refreshToken', res.data.refresh);
       onLogin();
